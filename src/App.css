@@ -1,0 +1,15 @@
+.parentcontainer{
+    background-color: #fff;
+    width: 100%;
+    margin: 0 auto;
+  
+    /* Small Devices, Tablets */
+    @media only screen and (min-width : 768px) {
+      width: 75%;
+    }
+  
+    /* Medium Devices, Desktops */
+    @media only screen and (min-width : 992px) {
+      width: 50%;
+    }
+}
