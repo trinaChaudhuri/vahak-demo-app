@@ -32,6 +32,11 @@
     font-family: 'Nunito', sans-serif;
     font-size: 13px;
 }
+.fixedpriceselected{
+    font-family: 'Nunito', sans-serif;
+    font-size: 13px;
+    color: #3054D6;  
+}
 .ratenegotiable{
     font-family: 'Nunito', sans-serif;
     font-size: 13px;
@@ -39,6 +44,15 @@
 .fixedpricecontainer{
     border-style: solid;
     border-color: #E7EBEE;
+    border-width: 1px;
+    border-radius: 18px;
+    padding: 10px;
+    text-align: center;
+    margin-left: 40px;
+}
+.fixedpricecontainerselected{
+    border-style: solid;
+    border-color: #3054D6;
     border-width: 1px;
     border-radius: 18px;
     padding: 10px;
@@ -59,4 +73,20 @@
     font-family: 'Nunito', sans-serif;
     font-weight: bold;
     font-size: 16px;
+}
+.bidnowbuttoncontainerenabled{
+        text-align: center;
+        background-color: #3054D6;
+        padding: 15px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        border-color: #EDF0F7;
+        border-style: solid;
+}
+.bidnowtextenabled{
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color: #fff;
 }
