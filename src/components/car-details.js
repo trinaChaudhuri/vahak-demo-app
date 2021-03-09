@@ -6,9 +6,11 @@ import specification3 from '../assets/specification3.png';
 import arrowdown from '../assets/arrowdown.png';
 import profile from '../assets/Profile.png';
 import hide from '../assets/Hide.png';
-import rupee from '../assets/rupee.png';
 //style imports
 import '../styles/cardetails.css';
+//screen imports
+import PlaceYourBid from './place-your-bid-card';
+
 export default function CarDetails(){
     const [hidedetails,sethidedetails]=useState(false);
     return(
@@ -34,12 +36,12 @@ export default function CarDetails(){
                         <div className="specificationtext">Specification 01</div>
                     </div>
                 </div>
-                {hidedetails==true && (
+                {hidedetails===true && (
                     <div className="details">
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                     </div>
                 )}
-                {hidedetails==false?(
+                {hidedetails===false?(
                     <div className="moredetails">
                     <div className="moredetailscontainer" onClick={()=>sethidedetails(true)}>
                         <div className="moredetailstext">More Details</div>
@@ -63,14 +65,8 @@ export default function CarDetails(){
                     </div>
                 </div>
             </div>
-            <div className="placeyourbidcontainer">
-                <div className="placeyourbidtext">Place Your BID</div>
-                <div className="bar"></div>
-                <div className="placeyourbidchildcontainer">
-                <div className="placeholdercontainer">
-            </div>
-         </div>
-         </div>
+            <PlaceYourBid />
+            
         </div>
     )
 }
