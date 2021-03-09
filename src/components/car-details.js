@@ -1,14 +1,16 @@
-import React from 'react';
+import React,{useState} from 'react';
 //image imports
 import specification1 from '../assets/specification1.png';
 import specification2 from '../assets/specification2.png';
 import specification3 from '../assets/specification3.png';
 import arrowdown from '../assets/arrowdown.png';
 import profile from '../assets/Profile.png';
+import hide from '../assets/Hide.png';
 import rupee from '../assets/rupee.png';
 //style imports
 import '../styles/cardetails.css';
 export default function CarDetails(){
+    const [hidedetails,sethidedetails]=useState(false);
     return(
         <div>
             <div className="title">Old Car Available</div>
@@ -32,12 +34,27 @@ export default function CarDetails(){
                         <div className="specificationtext">Specification 01</div>
                     </div>
                 </div>
-                <div className="moredetails">
-                    <div className="moredetailscontainer">
+                {hidedetails==true && (
+                    <div className="details">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                    </div>
+                )}
+                {hidedetails==false?(
+                    <div className="moredetails">
+                    <div className="moredetailscontainer" onClick={()=>sethidedetails(true)}>
                         <div className="moredetailstext">More Details</div>
                         <img className="arrowdown" src={arrowdown} alt=""/>
                     </div>
                 </div>
+                ):(
+                    <div className="moredetails">
+                    <div className="moredetailscontainer" onClick={()=>sethidedetails(false)}>
+                        <div className="moredetailstext">Hide Details</div>
+                        <img className="arrowdown" src={hide} alt=""/>
+                    </div>
+                </div>
+                )}
+                
                 <div className="profiletextcontainer">
                     <img alt="" src={profile} className="profile"/>
                     <div className="profilechildcontainer">

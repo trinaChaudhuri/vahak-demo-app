@@ -16,7 +16,6 @@
     margin-top: 10px;
 }
 .containerforavailability{
-    height: 296px;
     width: 335px;
     border-radius: 5px;
     border-style: solid;
@@ -130,4 +129,10 @@
 }
 .placeholdercontainer{
     display: flex;
+}
+.details{
+    font-family: 'Nunito', sans-serif;
+    font-size: 12px;
+    padding: 10px;
+    color: #000;
 }
