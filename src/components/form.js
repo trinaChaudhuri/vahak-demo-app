@@ -7,12 +7,16 @@ export default function Form(props){
     const [remarks,setremarks]=useState("");
     return(
         <div className="formwrapper">
+            <div className="numberplaceholder">
             <input type="number" placeholder="Enter your mobile number*" className="forminputplaceholder" 
             onChange={(event)=>
                 setmobile(event.target.value)
             } 
             value={mobile}
-            max="10"/>
+            maxLength="10"
+            pattern="[0-9]*"
+            size="10"/>
+            </div>
             <input type="text" placeholder="Enter your name*" className="forminputplaceholder" 
             onChange={(event)=>setname(event.target.value)} value={name}/>
             <input type="text" placeholder="Enter remarks(optional)" className="forminputplaceholder"

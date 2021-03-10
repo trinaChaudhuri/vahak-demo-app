@@ -23,6 +23,16 @@
     margin-top: 7px;
     text-align: center;
 }
+.amountplaceholder input{
+    border: none;
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    max-width: 220px;
+    font-size: 50px;
+}
+.amountplaceholder :focus{
+    border: none;
+}
 .buttons{
   display: flex;
   margin-top: 10px;
@@ -58,6 +68,7 @@
     padding: 10px;
     text-align: center;
     margin-left: 40px;
+    background-color: #3054D60F;
 }
 .bidnowbuttoncontainer{
     text-align: center;
