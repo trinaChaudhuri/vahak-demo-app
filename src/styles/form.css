@@ -1,0 +1,20 @@
+.formwrapper{
+    text-align: center;
+}
+.forminputplaceholder{
+    height: 50px;
+    margin-top: 2px;
+    color: #000;
+    margin-bottom: 2px;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+.forminputplaceholder:focus{
+    height: 50px;
+    margin-top: 2px;
+    border:2px solid #3054D6;
+    margin-bottom: 2px;
+    color: black;
+    outline: none;
+}

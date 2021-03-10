@@ -1,0 +1,19 @@
+.header{
+    display: flex;
+    padding: 16px;
+    justify-content: space-between;
+    box-shadow: 5px 5px #E7EBEEB3;
+    height: 40px;
+}
+.profiletop{
+    height: 30px;
+    width: 30px;
+}
+.hamburger{
+    height: 36px;
+    width: 36px;
+}
+.hondalogo{
+    width: 84px;
+    height: 67px;
+}
