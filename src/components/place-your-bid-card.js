@@ -48,9 +48,19 @@ export default function PlaceYourBid(){
                 <div className="fixedprice">Fixed Price</div>
                 </div>
                 )}  
-                <div className="fixedpricecontainer">
+                {showform===true && toggleButtons===2?(
+                <div className="ratenegotiablecontainerselected">
+                <div className="ratenegotiableselected">Rate Negiotable</div>
+                </div>
+                ):(
+                <div className="ratenegotiablepricecontainer" onClick={()=>{
+                    setshowform(true)
+                    setToggleButtons(2)
+                    }}>
                 <div className="ratenegotiable">Rate Negiotable</div>
                 </div>
+                )}
+               
             </div>
             {showform===true && <Form handleEnableBidNow={handleEnableBidNow}/>}
           </div>

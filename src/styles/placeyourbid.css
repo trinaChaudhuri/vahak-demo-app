@@ -47,6 +47,11 @@
     font-size: 13px;
     color: #3054D6;  
 }
+.ratenegotiableselected{
+    font-family: 'Nunito', sans-serif;
+    font-size: 13px;
+    color: #3054D6;  
+}
 .ratenegotiable{
     font-family: 'Nunito', sans-serif;
     font-size: 13px;
@@ -60,7 +65,26 @@
     text-align: center;
     margin-left: 40px;
 }
+.ratenegotiablepricecontainer{
+    border-style: solid;
+    border-color: #E7EBEE;
+    border-width: 1px;
+    border-radius: 18px;
+    padding: 10px;
+    text-align: center;
+    margin-left: 40px;  
+}
 .fixedpricecontainerselected{
+    border-style: solid;
+    border-color: #3054D6;
+    border-width: 1px;
+    border-radius: 18px;
+    padding: 10px;
+    text-align: center;
+    margin-left: 40px;
+    background-color: #3054D60F;
+}
+.ratenegotiablecontainerselected{
     border-style: solid;
     border-color: #3054D6;
     border-width: 1px;
